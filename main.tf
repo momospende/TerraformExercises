@@ -14,8 +14,10 @@ terraform {
 module "vpc" {
   source = "./modules/networking"
 
-  vpc_cidr    = var.vpc_cidr
-  subnet_cidr = var.subnet_cidr
+  vpc_cidr             = var.vpc_cidr
+  subnet_cidr          = var.subnet_cidr
+  enable_dns_support   = var.enable_dns_support
+  enable_dns_hostnames = var.enable_dns_support
 
 }
 
