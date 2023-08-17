@@ -4,6 +4,3 @@ resource "aws_instance" "example" {
   subnet_id     = "subnet-05fe659c9d8c174fa"
 
 }
-
-
-
